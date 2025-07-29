@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/hw/hw.iml" filepath="$PROJECT_DIR$/hw/hw.iml" />
-      <module fileurl="file://$PROJECT_DIR$/prall.iml" filepath="$PROJECT_DIR$/prall.iml" />
-    </modules>
-  </component>
-</project>

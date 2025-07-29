@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5b955dc-66cd-41b0-baef-bdb450319e6f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/prall/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/.idea/libraries/hw2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/bin/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/Start.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/folder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/gitbash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/githubdesk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/githubrepos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/java console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/java-home-bin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/java-home-sys.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/startpr1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw2/startpr1vscode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw3/GameKNB/KNB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw3/ScannerName/ScannerName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw3/full.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw3/resultTask1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw3/resultTask2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeApp01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeApp02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeApp03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeApp04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeTelevision01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeTelevision02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeTelevision03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeTelevision04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/CodeTelevision05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/ResultTask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/Television/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/Television/Television.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw4/full.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/ABC/Abc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/Keyboard/KeyboardList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/ResultTask01-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/ResultTask01-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/ResultTask02-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/ResultTask02-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/ResultTask02-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/ResultTask03-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/Sequence/Sequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/Task1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/Task2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/hw/hw5/Task3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/ABC/Abc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/AboutMe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/Array/Studentlist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/GameKNB/KNB$1Choices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/GameKNB/KNB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/Keyboard/KeyboardList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/ScannerName/ScannerName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/Sequence/Sequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/Start.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/Television/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/out/production/prall/Television/Television.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/prall.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/ABC/Abc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/AboutMe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/Array/Studentlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/GameKNB/KNB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/Keyboard/KeyboardList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/ScannerName/ScannerName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/Sequence/Sequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/Start.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/Television/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/Television/Television.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prall/src/TestClass.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="30Ynf5Jim573mDWq9TSCGdQn7dE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "attestation/attestation01"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5b955dc-66cd-41b0-baef-bdb450319e6f" name="Changes" comment="" />
+      <created>1753813474582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753813474582</updated>
+    </task>
+    <servers />
+  </component>
+</project>
