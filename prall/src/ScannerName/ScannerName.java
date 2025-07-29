@@ -8,5 +8,6 @@ public class ScannerName {
         System.out.println("Введите Имя пользователя: ");
         String name = scanner.nextLine();
         System.out.println("Привет, " + name);
+        scanner.close();
     }
 }
