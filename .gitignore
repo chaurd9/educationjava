@@ -1,0 +1,33 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Сборки
+target/
+build/
+out/
+bin/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+
+# Системные файлы
+.DS_Store
+.git/
+
+# Прочее
+*.zip
+prall/
+backup/
+*.docx
+*.xml
