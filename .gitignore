@@ -31,6 +31,5 @@ backup/
 *.docx
 *.xml
 *.rar
-*.zip
 .sources
 *.pdf
