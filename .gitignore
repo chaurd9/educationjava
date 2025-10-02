@@ -29,6 +29,6 @@ bin/
 prall/
 backup/
 *.docx
-*.xml
 *.rar
 .sources
+dependency-reduced-pom.xml
