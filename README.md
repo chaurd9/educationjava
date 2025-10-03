@@ -74,21 +74,21 @@
 10. Архив
 
 ## Скриншоты
-1. Все заказы за последние 7 дней - testsql/1Days.png
-2. Топ-3 популярных товара - testsql/2Top.png
-3. Список клиентов и количество их заказов - testsql/3ListClients.png
-4. Обновить цену у молока - testsql/4UpdatePriceMilkDO.png и 4UpdatePriceMilkPOSLE.png
-5. Увеличить количество хлеба на складе - testsql/5UpdateAmountBreadDO.png и 5UpdateAmountBreadPOSLE.png
-6. Удалить клиентов без заказов - testsql/6DeleteEmptyDO.png и 6DeleteEmptyPOSLE.png
-7. Список всех товаров по категории - testsql/7ListCateg.png
-8. Удаление всех заказов старше месяца - testsql/8DeleteOldestDO.png и 8DeleteOldestPOSLE.png
-9. Изменение статуса заказа - testsql/9ChangeStatusDO.png и 9ChangeStatusPOSLE.png
-10. Проверка остатков на складе - testsql/10Quantity.png
-11. Соединение с БД PSQL IDEA - condbidea.png
-12. Диаграммы - DBeaverDiag.png
-13. Установка Docker Desktop (параллельно был установлен в IDEA Plugin) - docker-install.png
-14. PSQL 12 (как рекомендовано) - psql-install.png
-15. Скомпилированный файл .jar с помощью Marven, работа с операциями CRUD, а также миграцией Flyway - MavenJarMigrationCRUD.png
+1. Все заказы за последние 7 дней - testsql/1Days.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/1Days.png)
+2. Топ-3 самых дорогих товара - testsql/2Top.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/2Top.png)
+3. Список клиентов и количество заказов - testsql/3ListClients.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/3ListClients.png)
+4. Изменить цену молока - testsql/4UpdatePriceMilkDO.png и 4UpdatePriceMilkPOSLE.png / [смотреть до](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/4UpdatePriceMilkDO.png) / [после](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/4UpdatePriceMilkPOSLE.png)
+5. Увеличить количество хлеба - testsql/5UpdateAmountBreadDO.png и 5UpdateAmountBreadPOSLE.png / [смотреть до](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/5UpdateAmountBreadDO.png) / [после](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/5UpdateAmountBreadPOSLE.png)
+6. Удалить клиента без заказов - testsql/6DeleteEmptyDO.png и 6DeleteEmptyPOSLE.png / [смотреть до](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/6DeleteEmptyDO.png) / [после](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/6DeleteEmptyPOSLE.png)
+7. Список всех товаров по категориям - testsql/7ListCateg.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/7ListCateg.png)
+8. Удаление всех заказов старше года - testsql/8DeleteOldestDO.png и 8DeleteOldestPOSLE.png / [смотреть до](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/8DeleteOldestDO.png) / [после](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/8DeleteOldestPOSLE.png)
+9. Изменение статуса заказа - testsql/9ChangeStatusDO.png и 9ChangeStatusPOSLE.png / [смотреть до](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/9ChangeStatusDO.png) / [после](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/9ChangeStatusPOSLE.png)
+10. Количество товаров на складе - testsql/10Quantity.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/testsql/10Quantity.png)
+11. Подключение к БД PSQL IDEA - condbidea.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/condbidea.png)
+12. Диаграмма - DBeaverDiag.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/DBeaverDiag.png)
+13. Установленный Docker Desktop - docker-install.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/docker-install.png)
+14. PSQL 12 - psql-install.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/psql-install.png)
+15. Скомпилированный .jar с помощью Maven, примеры с CRUD-операциями, и миграции Flyway - MavenJarMigrationCRUD.png / [смотреть](https://github.com/chaurd9/educationjava/blob/attestation/attestation-order-list/screenshots/MavenJarMigrationCRUD.png)
 
 ## Обновления
 03.10.2025
