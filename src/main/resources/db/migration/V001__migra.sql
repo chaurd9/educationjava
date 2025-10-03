@@ -60,28 +60,34 @@ COMMENT ON COLUMN orders.quantity IS 'Количество';
 COMMENT ON COLUMN orders.status IS 'Внешний ключ на статус заказа';
 
 INSERT INTO product (description, price, quantity, category) VALUES
-('Хлеб', 49.99, 100, 'Хлебобулочные'),
-('Молоко', 89.99, 50, 'Молочные продукты'),
-('Яйца', 129.99, 200, 'Яйца'),
-('Сыр', 299.99, 30, 'Молочные продукты'),
-('Курица', 199.99, 40, 'Мясные продукты'),
-('Колбаса', 399.99, 20, 'Мясные продукты'),
-('Картофель', 39.99, 150, 'Овощи'),
-('Морковь', 29.99, 100, 'Овощи'),
-('Яблоки', 69.99, 80, 'Фрукты'),
-('Бананы', 89.99, 60, 'Фрукты');
+('Хлеб', 49.99, 97, 'Хлебобулочные'),
+('Молоко', 89.99, 53, 'Молочные продукты'),
+('Яйца', 129.99, 201, 'Яйца'),
+('Сыр', 299.99, 29, 'Молочные продукты'),
+('Курица', 199.99, 41, 'Мясные продукты'),
+('Колбаса', 399.99, 23, 'Мясные продукты'),
+('Картофель', 39.99, 149, 'Овощи'),
+('Морковь', 29.99, 103, 'Овощи'),
+('Яблоки', 69.99, 81, 'Фрукты'),
+('Бананы', 89.99, 62, 'Фрукты');
 
 INSERT INTO customer (first_name, last_name, phone, email) VALUES
-('Александр', 'Хлеб', '123456789', 'alex.hleb@example.com'),
-('Андрей', 'Молоко', '987654321', 'andrey.moloko@example.com'),
-('Анна', 'Яйца', '111222333', 'anna.yaytsa@example.com'),
-('Алиса', 'Сыр', '444555666', 'alisa.syr@example.com'),
-('Артем', 'Яблоки', '777888999', 'artem.yabloki@example.com'),
-('Арина', 'Бананы', '000111222', 'arina.banany@example.com'),
-('Анатолий', 'Картофель', '333444555', 'anatoliy.kartofel@example.com'),
-('Алексей', 'Морковь', '666777888', 'alexey.morkov@example.com'),
-('Антон', 'Колбаса', '999000111', 'anton.kolbasa@example.com'),
-('Алена', 'Бойко', '222333444', 'alena.boyko@example.com');
+('Александр', 'Иванов', '123456789', 'alex.ivanov@example.com'),
+('Андрей', 'Петров', '987654321', 'andrey.petrov@example.com'),
+('Анна', 'Сидорова', '111222333', 'anna.sidorova@example.com'),
+('Алиса', 'Козлова', '444555666', 'alisa.kozlova@example.com'),
+('Артем', 'Смирнов', '777888999', 'artem.smirnov@example.com'),
+('Арина', 'Васильева', '000111222', 'arina.vasilieva@example.com'),
+('Анатолий', 'Морозов', '333444555', 'anatoliy.morozov@example.com'),
+('Алексей', 'Новиков', '666777888', 'alexey.novikov@example.com'),
+('Антон', 'Федоров', '999000111', 'anton.fedorov@example.com'),
+('Алена', 'Бойко', '222333444', 'alena.boyko@example.com'),
+('Екатерина', 'Кузнецова', '555666777', 'ekaterina.kuznetsova@example.com'),
+('Дмитрий', 'Попов', '888999000', 'dmitriy.popov@example.com'),
+('Мария', 'Лебедева', '111000222', 'mariya.lebedeva@example.com'),
+('Игорь', 'Соколов', '444000555', 'igor.sokolov@example.com'),
+('Ольга', 'Орлова', '777000888', 'olga.orlova@example.com'),
+('Виктор', 'Ковалев', '123000456', 'viktor.kovalev@example.com');
 
 INSERT INTO order_status (status_name) VALUES
 ('Создан'), ('Оплачен'), ('Доставлен'), ('Отменен'), ('В обработке'),
@@ -97,4 +103,9 @@ INSERT INTO orders (product_id, customer_id, quantity, status, order_date) VALUE
 ((SELECT id FROM product WHERE description = 'Картофель'), (SELECT id FROM customer WHERE first_name = 'Анатолий'), 10, 7, '2025-09-05 08:30:00'),
 ((SELECT id FROM product WHERE description = 'Морковь'), (SELECT id FROM customer WHERE first_name = 'Алексей'), 6, 8, '2025-08-25 17:00:00'),
 ((SELECT id FROM product WHERE description = 'Колбаса'), (SELECT id FROM customer WHERE first_name = 'Антон'), 2, 9, '2025-08-15 12:10:00'),
-((SELECT id FROM product WHERE description = 'Курица'), (SELECT id FROM customer WHERE first_name = 'Алена'), 1, 10, '2025-08-01 15:40:00');
+((SELECT id FROM product WHERE description = 'Курица'), (SELECT id FROM customer WHERE first_name = 'Алена'), 1, 10, '2025-08-01 15:40:00'),
+((SELECT id FROM product WHERE description = 'Яблоки'), (SELECT id FROM customer WHERE first_name = 'Екатерина'), 3, 2, '2025-09-30 12:00:00'),
+((SELECT id FROM product WHERE description = 'Молоко'), (SELECT id FROM customer WHERE first_name = 'Дмитрий'), 2, 5, '2025-09-27 15:30:00'),
+((SELECT id FROM product WHERE description = 'Картофель'), (SELECT id FROM customer WHERE first_name = 'Мария'), 7, 7, '2025-08-20 10:45:00'),
+((SELECT id FROM product WHERE description = 'Хлеб'), (SELECT id FROM customer WHERE first_name = 'Игорь'), 1, 4, '2025-08-15 09:00:00'),
+((SELECT id FROM product WHERE description = 'Бананы'), (SELECT id FROM customer WHERE first_name = 'Ольга'), 4, 3, '2025-08-10 14:20:00');

@@ -10,6 +10,8 @@ import org.flywaydb.core.Flyway;
 public class App {
     public static void main(String[] args) {
         Connection conn = null;
+        String newProductDescription = null;
+        String newCustomerName = null;
 
         try (InputStream input = App.class.getClassLoader().getResourceAsStream("application.properties")) {
             Properties props = new Properties();
@@ -41,7 +43,8 @@ public class App {
                 ps.executeUpdate();
                 ResultSet rs = ps.getGeneratedKeys();
                 newProductId = rs.next() ? rs.getInt(1) : -1;
-                System.out.println("Вставлен новый товар с ID: " + newProductId);
+                newProductDescription = "Сметана";
+                System.out.println("Вставлен новый товар с ID: " + newProductId + " (" + newProductDescription + ")");
             }
 
             int newCustomerId;
@@ -55,7 +58,8 @@ public class App {
                 ps.executeUpdate();
                 ResultSet rs = ps.getGeneratedKeys();
                 newCustomerId = rs.next() ? rs.getInt(1) : -1;
-                System.out.println("Вставлен новый покупатель с ID: " + newCustomerId);
+                newCustomerName = "Тестовый";
+                System.out.println("Вставлен новый покупатель с ID: " + newCustomerId + " (" + newCustomerName + ")");
             } catch (SQLException e) {
                 if (e.getSQLState().equals("23505")) {
                     System.out.println("Ошибка: Email 'new@example.com' уже существует. Используйте другой email.");
@@ -81,27 +85,29 @@ public class App {
             System.out.println("====================================");
             try (Statement st = conn.createStatement()) {
                 ResultSet rs = st.executeQuery(
-                        "SELECT o.id, c.first_name, p.description, o.quantity, o.order_date " +
+                        "SELECT o.id, c.first_name, p.description, o.quantity, os.status_name, o.order_date " +
                                 "FROM orders o " +
                                 "JOIN customer c ON o.customer_id = c.id " +
                                 "JOIN product p ON o.product_id = p.id " +
+                                "JOIN order_status os ON o.status = os.id " +
                                 "ORDER BY o.order_date DESC LIMIT 5");
                 System.out.println("Последние 5 заказов:");
                 List<String> rows = new ArrayList<>();
                 int maxLength = 0;
                 while (rs.next()) {
-                    String line = String.format("%-3d | %-10s | %-15s | %-6s | %s",
+                    String line = String.format("%-3d | %-10s | %-15s | %-6s | %-15s | %s",
                             rs.getInt("id"),
                             rs.getString("first_name"),
                             rs.getString("description"),
                             rs.getInt("quantity") + " шт.",
+                            rs.getString("status_name"),
                             rs.getTimestamp("order_date").toLocalDateTime().format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss")));
                     rows.add(line);
                     maxLength = Math.max(maxLength, line.length());
                 }
                 String separator = "-".repeat(maxLength);
                 System.out.println(separator);
-                System.out.printf("%-3s | %-10s | %-15s | %-6s | %s%n", "№", "Имя", "Продукт", "Кол", "Дата");
+                System.out.printf("%-3s | %-10s | %-15s | %-6s | %-15s | %s%n", "№", "Имя", "Продукт", "Кол", "Статус", "Дата");
                 System.out.println(separator);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
                 for (String row : rows) {
@@ -115,7 +121,7 @@ public class App {
                 ps.setInt(2, 1);
                 ps.setInt(3, newProductId);
                 ps.executeUpdate();
-                System.out.println("Обновлена цена и количество для товара ID: " + newProductId);
+                System.out.println("Обновлена цена и количество для товара ID: " + newProductId + " (" + newProductDescription + ")");
             }
             try (PreparedStatement ps = conn.prepareStatement("DELETE FROM orders WHERE id = ?")) {
                 ps.setInt(1, newOrderId);
@@ -125,35 +131,37 @@ public class App {
             try (PreparedStatement ps = conn.prepareStatement("DELETE FROM customer WHERE id = ?")) {
                 ps.setInt(1, newCustomerId);
                 ps.executeUpdate();
-                System.out.println("Удалён покупатель ID: " + newCustomerId);
+                System.out.println("Удалён покупатель ID: " + newCustomerId + " (" + newCustomerName + ")");
             }
             try (PreparedStatement ps = conn.prepareStatement("DELETE FROM product WHERE id = ?")) {
                 ps.setInt(1, newProductId);
                 ps.executeUpdate();
-                System.out.println("Удалён товар ID: " + newProductId);
+                System.out.println("Удалён товар ID: " + newProductId  + " (" + newProductDescription + ")");
             }
             try (Statement st = conn.createStatement()) {
                 ResultSet rs = st.executeQuery(
-                        "SELECT o.id, c.first_name, p.description, o.quantity, o.order_date " +
+                        "SELECT o.id, c.first_name, p.description, o.quantity, os.status_name, o.order_date " +
                                 "FROM orders o " +
                                 "JOIN customer c ON o.customer_id = c.id " +
                                 "JOIN product p ON o.product_id = p.id " +
+                                "JOIN order_status os ON o.status = os.id " +
                                 "ORDER BY o.order_date DESC LIMIT 5");
                 List<String> rows = new ArrayList<>();
                 int maxLength = 0;
                 while (rs.next()) {
-                    String line = String.format("%-3d | %-10s | %-15s | %-6s | %s",
+                    String line = String.format("%-3d | %-10s | %-15s | %-6s | %-15s | %s",
                             rs.getInt("id"),
                             rs.getString("first_name"),
                             rs.getString("description"),
                             rs.getInt("quantity") + " шт.",
+                            rs.getString("status_name"),
                             rs.getTimestamp("order_date").toLocalDateTime().format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss")));
                     rows.add(line);
                     maxLength = Math.max(maxLength, line.length());
                 }
                 String separator = "-".repeat(maxLength);
                 System.out.println(separator);
-                System.out.printf("%-3s | %-10s | %-15s | %-6s | %s%n", "№", "Имя", "Продукт", "Кол", "Дата");
+                System.out.printf("%-3s | %-10s | %-15s | %-6s | %-15s | %s%n", "№", "Имя", "Продукт", "Кол", "Статус", "Дата");
                 System.out.println(separator);
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
                 for (String row : rows) {
